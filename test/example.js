@@ -1,13 +1,21 @@
 // load Unit.js module
 var test = require('unit.js');
 
-//var file = require('../JenkinsTest/public_html/js/tryout.js');
+var tryout = require('../public_html/js/tryout.js');
 
 var example = 'Hello world!';
 
 // describes a successfull test as
 // [name]
 // V [description]
+
+it('Should return the same number we give', function() {
+    num = 2;
+    
+    test.number(tryout.nombre(num)).isEqualTo(num);
+})
+
+
 describe('Hello', function() {
   it('Should return true if Hello world! starts with Hello', function() {
     test.string(example).startsWith('Hello');
