@@ -15,7 +15,7 @@ describe('Hello', function() {
 });
 
 describe('world', function() {
-  it('Should return true if '+ file + ' contains world', function() {
+  it('Should return true if Hello world! contains world', function() {
     test.string(example).contains('world');
   });
 });
