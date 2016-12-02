@@ -19,6 +19,11 @@ function getHour(time) {
     return time;
 }
 
+function getHour(time) {
+    time = parseInt(time.substr(3, 5));
+    return time;
+}
+
 function nombre(num) {
     return num;
 }
