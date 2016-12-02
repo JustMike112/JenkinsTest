@@ -19,8 +19,8 @@ function getHour(time) {
     return time;
 }
 
-function getHour(time) {
-    time = parseInt(time.substr(3, 5));
+function getMinutes(time) {
+    time = parseInt(time.substr(3));
     return time;
 }
 
@@ -34,6 +34,7 @@ function nombre(num) {
 if (typeof module !== 'undefined' && module.exports !== null) {
     exports.greetings = greetings;
     exports.getHour = getHour;
+    exports.getMinutes = getMinutes;
     exports.hi = hi;
     exports.nombre = nombre;
 }
