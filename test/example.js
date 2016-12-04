@@ -14,6 +14,7 @@ describe('Time functions', function() {
     it('getMinutes() should return the minutes', function() {
         test.number(tryout.getMinutes('12:45')).isEqualTo(45);
     });
+    
 });
 
 describe('Greet functions', function() {
