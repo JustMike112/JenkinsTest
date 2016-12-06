@@ -15,6 +15,10 @@ describe('Time functions', function() {
         test.number(tryout.getMinutes('12:45')).isEqualTo(45);
     });
     
+    it('noFunction should not do anything', function() {
+        //empty test should pass
+    });
+    
 });
 
 describe('Greet functions', function() {
